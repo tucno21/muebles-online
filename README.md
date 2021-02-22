@@ -8,7 +8,7 @@
   npm install
 - Una vez terminada la instalación escribe el comando
   gulp
-- en el terminar escribir para instale para SASS
+- en el terminal escribir para instale para SASS
   npm install node-sass
 
 Para posibles fallos o problemas mira este vídeo:

@@ -1,0 +1,40 @@
+.footer{
+    background-color: #2C3E50;
+    padding: .1rem 3rem;
+    color: $white;
+    font-size: 1.15rem;
+    font-family: $font-archivo;
+
+    &__contacto{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+
+    &__home,
+    &__numero{
+        display: flex;
+        align-items: center;
+        
+
+        & p{
+            margin: .7rem;
+        }
+    }
+
+    @include laptop{
+        font-size: 1.5rem;
+        padding: .1rem 12rem;
+
+        &__direccion,
+        &__telefono{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.desarrollador{
+    text-align: center;
+    opacity: .5;
+}

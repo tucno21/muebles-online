@@ -1,0 +1,153 @@
+/*==========================*/
+/*HEADER*/
+.header-container{
+    // display: relative;
+}
+// ICONO DEL MENU RESPONSIVE
+.menu__show{
+    color: $white;
+    padding-left: 1rem;
+    font-size: 2.8rem;
+
+    @include laptop{
+        display: none;
+    }
+}
+
+// CONTENEDOR DE LA BARRA SUPERIOR
+.top-bar{
+    position: fixed;
+    top: 0; 
+    z-index: 100;
+    
+    // LOGO DE LA BARRA SUPERIOR
+    &__box{
+        background-color: $Brown;
+        width: 100vw;
+        color: $white;
+        display: flex;
+        align-items: center;
+        height: 4.8rem;
+        padding-left: 1rem;
+
+        @include laptop{
+            width: auto;
+            height: 6rem;
+        }
+    }
+
+    &__title,
+    &__icon{
+        padding: 0 1rem;
+        font-size: 2.8rem;
+        font-family: $font-oswald;
+
+        @include laptop{
+            font-size: 4rem;
+        }
+    }
+
+    @include laptop{
+        background-color: $Brown;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+}
+
+
+// MENU PARA LA BARRA SUPERIOR Y RESPONSIVE
+.top-menu{
+    @include reset-list;
+    background-color: rgba(145, 104, 74,.9);
+    transition: transform .3s;
+    transform: translateX(-100%);
+    position: fixed;
+    width: 100%;
+    
+    &__item{
+        border-bottom: 1px solid $white;
+        
+    }
+    &__link{
+        display: block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        color: $white;
+        font-size: 2rem;
+        font-family: $font-archivo;
+    }
+
+    @include laptop{
+        position: relative;
+        width: auto;
+        background-color: $Brown;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        transform: translateX(0);
+
+        &__item{
+            border: none;
+        }
+
+        &__link{
+            font-size: 1.4rem;
+
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+// MENU SOLO PARA DISPOSITIVOS MOVILES
+.menu-phone{
+    @include reset-list;
+    background-color: $Brown;
+    position: fixed;
+    top: 22.4rem;
+    width: 100%;
+    transition: transform .3s;
+    transform: translateX(-100%);
+    z-index: 100;
+    
+    &__item{
+        border-bottom: 1px solid $white;
+        
+    }
+    &__link{
+        display: block;
+        padding: 1rem 3.5rem;
+        text-decoration: none;
+        color: $white;
+        font-size: 2rem;
+        font-family: $font-archivo;
+        text-transform: uppercase;
+    }
+
+    @include laptop{
+        display: none;
+    }
+}
+
+.top-menu.activador,
+.menu-phone.activador{
+    transition: transform .3s;
+    transform: translate(0);
+}
+
+// IMAGE PORTADA
+.header_logo-img{
+    height: 27rem;
+    background-color: aqua;
+    padding-top: 6rem;
+    text-align: center;
+
+    & img{
+        max-width: 100%;
+    }
+}
+
+
