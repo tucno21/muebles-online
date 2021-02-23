@@ -3,7 +3,7 @@
 //- -const pages = ["Ropero", "Respostero", "Comoda", "Estantes", "Mesas", "Sillas", "Camas", "Zapatero"]
 
 //- variable para los menus de muebles
--const pages = ["Ropero", "Respostero", "Comoda", "Estantes", "Mesas", "Sillas", "Camas", "Zapatero"]
+-const pages = ["roperos", "resposteros", "comodas", "estantes", "mesas", "sillas", "camas", "zapateros"]
 
 
 //- BLOQUE PARA VENTA DE PRODUCTO PRINCIPAL
@@ -13,6 +13,8 @@ mixin ventacategoria(AgregarDato)
             img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + ".jpg" alt="foto ropero").box__image
         .box_container.box__info
             h2.box__title= AgregarDato.title
+            p.box__codigo Código: 
+                span= AgregarDato.codigo
             p.box__precio= AgregarDato.precio
 
             if AgregarDato.color

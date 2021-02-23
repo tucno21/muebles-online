@@ -4,19 +4,16 @@ block header
     include ../includes/header-menu
     block menu-phone
         include ../includes/header-menu-phone
-    block slider-logo
-        include ../includes/header-slider-logo
 
 block menu-scroll
     include ../includes/menu-scroll
 
 block main
+    .grupo-muebles
+        h2.grupo-muebles__title Comodas
+        p.grupo-muebles__content Tenemos comodas de diferentes colores y tamaños de diversos materiales en melamina, madera y MDf
+
     .main__container-index
-        //- - let carpetaIMAGEM = "ropero"
-        //- - let codigoMUEBLE = "rop001a"
-        //- - let tituloMUEBLE = "Ropero con Cajones y espejo 6"
-        //- - let precio = "S/ 801"
-        //- - let presentarCOLOR = true
 
         - const rop001a = {dirIMG: 'ropero/', codigo: 'rop001a', title: 'Ropero con Cajones y espejo', precio: 'S/ 900', color: true}
         +ventacategoria (rop001a)

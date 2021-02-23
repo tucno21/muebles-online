@@ -1,0 +1,28 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+    block menu-phone
+        include ../includes/header-menu-phone
+
+block menu-scroll
+    include ../includes/menu-scroll
+
+block main
+    .main__container-fabrica
+        section.fabrica
+            h2.fabrica__title Elaboramos Muebles en Melamina y MDF
+            p.fabrica__contenido A medida, color, gusto y diseño del cliente para sala, comedor, dormitorio, cocina, baño y otros espacios.
+            img(src="assets/img/fabricar.jpg" alt="fabrica de mueble").fabrica__imagen
+            p.fabrica__contenido Contáctenos para realizar una cotización y con gusto le atenderemos.
+            .fabrica__link.fabrica__telefono
+                a(href="tel:910954568") Llamenos
+                    i.fas.fa-phone-volume
+            .fabrica__link.fabrica__whatsapp
+                a(href="https://wa.me/51910954568" target="_blank") Consultar al
+                    i.fab.fa-whatsapp
+
+
+
+block footer
+    include ../includes/footer

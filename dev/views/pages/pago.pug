@@ -1,0 +1,29 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+    block menu-phone
+        include ../includes/header-menu-phone
+
+block menu-scroll
+    include ../includes/menu-scroll
+
+block main
+    .main__container-pago
+        section.fomas-pago
+            h2.fomas-pago__title Formas de Pago
+            p.fomas-pago__subtitle Opcion 1
+            ul.fomas-pago__list
+                li.fomas-pago__item Anote el código del mueble que desea comprar
+                li.fomas-pago__item Consulte si existe el producto en WhatsApp con el código
+                li.fomas-pago__item Page el 50% al número Yape y realice una captura de pantalla
+                li.fomas-pago__item Envié un mensaje al WhatsApp con los siguientes datos: dirección del lugar, el código del Mueble y captura de pago de yape para enviarle el producto.
+                li.fomas-pago__item Reciba el producto y page el saldo del 50%
+            p.fomas-pago__subtitle Opcion 2
+                ul.fomas-pago__lis
+                    li.fomas-pago__item Visite nuestras tiendas
+            a(href="ubiquenos.html").fomas-pago__link Ubiquenos
+
+
+block footer
+    include ../includes/footer

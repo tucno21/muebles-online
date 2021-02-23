@@ -1,0 +1,31 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+    block menu-phone
+        include ../includes/header-menu-phone
+
+block menu-scroll
+    include ../includes/menu-scroll
+
+block main
+    .main__container-ubiquenos
+        section.ubicacion-local
+            h2.ubicacion-local__title Tienda - Fabrica
+            p.ubicacion-local__direccion Asoc Wari Accopampa Mz "G" Lt-9
+            .ubicacion-local__telefono
+                i.fa.fa-phone-alt
+                p 910954568
+            img(src="assets/img/tienda1.jpg" alt="ubicacion del local").ubicacion-local__imagen
+
+        section.ubicacion-local
+            h2.ubicacion-local__title Tienda
+            p.ubicacion-local__direccion Jr los rosales N° 456
+            .ubicacion-local__telefono
+                i.fa.fa-phone-alt
+                p 910954568
+            img(src="assets/img/tienda1.jpg" alt="ubicacion del local").ubicacion-local__imagen
+
+
+block footer
+    include ../includes/footer

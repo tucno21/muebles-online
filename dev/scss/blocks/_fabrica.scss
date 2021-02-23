@@ -1,0 +1,82 @@
+.main__container-fabrica{
+    padding-top: 5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fabrica{
+    box-sizing: border-box;
+    margin: 2.5rem 0;
+    padding: 2rem;
+    box-shadow: $shade;
+    border-radius: 1rem;
+    font-family: $font-archivo;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.3);
+    background-color: #fff;
+    text-align: center;
+
+    &__title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        margin: .5rem 0;
+    }
+
+    &__contenido{
+        font-size: 1.7rem;
+    }
+
+    &__imagen{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    &__link{
+        // border: 1px solid red;
+        width: 60%;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+        margin: .6rem auto;
+        border-radius: 1rem;
+        box-shadow: $shade;
+
+        & a{
+            text-decoration: none;
+            color: $white;
+        }
+        
+        & i{
+            margin-left: 1rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__telefono{
+        background-color: $blue-bottom;
+    }
+
+    &__whatsapp{
+        background-color: #00BB2D;
+    }
+
+    @include laptop{
+        max-width: 60vw;
+
+        &__imagen{
+            width: 40%;
+        }
+
+        &__link{
+            width: 40%;
+        }
+    }
+}
