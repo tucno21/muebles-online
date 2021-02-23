@@ -4,3 +4,61 @@
 
 //- variable para los menus de muebles
 -const pages = ["Ropero", "Respostero", "Comoda", "Estantes", "Mesas", "Sillas", "Camas", "Zapatero"]
+
+
+//- BLOQUE PARA VENTA DE PRODUCTO PRINCIPAL
+mixin ventacategoria(AgregarDato)
+    .box
+        .box_container.box__images
+            img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + ".jpg" alt="foto ropero").box__image
+        .box_container.box__info
+            h2.box__title= AgregarDato.title
+            p.box__precio= AgregarDato.precio
+
+            if AgregarDato.color
+                a(href= AgregarDato.codigo + ".html").box__colores Colores
+
+            a(href= AgregarDato.codigo + ".html").box__comprar Comprar
+                i.fas.fa-shopping-cart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- mixin venta(codigo, titulo, precio)
+//-     .box
+//-         .box_container.box__images
+//-             img(src="assets/img/gallery/ropero/" + codigo + ".jpg" alt="foto ropero").box__image
+//-         .box_container.box__info
+//-             h2.box__title Ropero con Cajones y espejo
+//-             p.box__precio= precio
+//-             a(href= codigo + ".html").box__colores Colores
+//-             a(href= codigo + ".html").box__comprar Comprar
+//-                 i.fas.fa-shopping-cart
+
+//- +venta('rop001a', 'Ropero con Cajones y espejo', 'S/ 620')
+
+//- +venta('rop002a', 'Ropero grande dos puertas', 'S/ 780')
+
+//- +venta('rop001a', 'Ropero con Cajones y espejo', 'S/ 620')
+
+//- +venta('rop002a', 'Ropero grande dos puertas', 'S/ 780')
+

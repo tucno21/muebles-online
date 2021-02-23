@@ -11,6 +11,32 @@ block menu-scroll
     include ../includes/menu-scroll
 
 block main
-    include ../includes/main-index
+    //- - let carpetaIMAGEM = "ropero"
+    //- - let codigoMUEBLE = "rop001a"
+    //- - let tituloMUEBLE = "Ropero con Cajones y espejo 6"
+    //- - let precio = "S/ 801"
+    //- - let presentarCOLOR = true
+
+    - const rop001a = {dirIMG: 'ropero/', codigo: 'rop001a', title: 'Ropero con Cajones y espejo', precio: 'S/ 900', color: true}
+    +ventacategoria (rop001a)
+
+    - const rep001a = {dirIMG: 'ropero/',codigo: 'rep001a', title: 'repostero mediano con cucharera', precio: 'S/ 300', color: false}
+    +ventacategoria (rep001a)
+
+    - const mes001a = {dirIMG: 'ropero/',codigo: 'mes001a', title: 'mesa con tablero de melamine y metal', precio: 'S/ 180', color: false}
+    +ventacategoria (mes001a)
+
+    - const sill001a = {dirIMG: 'ropero/',codigo: 'sill001a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
+    +ventacategoria (sill001a)
+
+    - const com001a = {dirIMG: 'ropero/',codigo: 'com001a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
+    +ventacategoria (com001a)
+
+    - const com002a = {dirIMG: 'ropero',codigo: 'com002a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
+    +ventacategoria (com002a)
+
+    //- include ../includes/main-index
+
+
 block footer
     include ../includes/footer
