@@ -160,6 +160,55 @@ body { background-color: var(--background-color); }
 
 .header_logo-img img { max-width: 100%; }
 
+.slider { margin: 0; padding: 0; padding-top: 5.4rem; padding-bottom: .4rem; display: flex; justify-content: center; align-items: center; background: var(--background-color); }
+
+@media screen and (min-width: 1024px) { .slider { padding-top: 7rem; padding-bottom: 1rem; } }
+
+.slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 95vw; }
+
+@media screen and (min-width: 1024px) { .slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 80vw; } }
+
+.slider__container, .slides, .slides__images img { height: 160px; }
+
+@media screen and (min-width: 1024px) { .slider__container, .slides, .slides__images img { height: 450px; } }
+
+.slider__container { border-radius: 10px; overflow: hidden; }
+
+.slides { position: relative; width: 500%; display: flex; }
+
+.slides-btn { display: none; }
+
+.slides__images { width: 20%; transition: 2s; }
+
+/*===================*/
+.navigation-auto, .navigation-manual { position: absolute; display: flex; justify-content: center; }
+
+.auto-btn, .manual-btn { border: 2px solid var(--yellow); padding: 5px; border-radius: 10px; transition: 1s; }
+
+.auto-btn:not(:last-child), .manual-btn:not(:last-child) { margin-right: 40px; }
+
+/*css for automatic navigation*/
+.navigation-auto { margin-top: 2rem; z-index: -1; }
+
+.auto-btn:not(:last-child) { margin-right: 40px; }
+
+#radio1:checked ~ .navigation-auto .auto-btn1, #radio2:checked ~ .navigation-auto .auto-btn2, #radio2:checked ~ .navigation-auto .auto-btn3, #radio4:checked ~ .navigation-auto .auto-btn4 { background: var(--white); }
+
+/*css for manual slide navigation*/
+.navigation-manual { margin-top: -3rem; }
+
+.manual-btn { cursor: pointer; }
+
+.manual-btn:hover { background: #493323; }
+
+#radio1:checked ~ .first { margin-left: 0; }
+
+#radio2:checked ~ .first { margin-left: -20%; }
+
+#radio3:checked ~ .first { margin-left: -40%; }
+
+#radio4:checked ~ .first { margin-left: -60%; }
+
 .menu { font-size: 1.4rem; background-color: var(--yellow); display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem 0; z-index: 10; position: -webkit-sticky; position: sticky; top: 4.8rem; }
 
 .menu__box { overflow-x: auto; list-style: none; padding-left: 0; margin-top: 0; margin-bottom: 0; display: flex; align-items: center; }

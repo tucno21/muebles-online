@@ -1,8 +1,15 @@
 extends ../templates/template
+
 block header
     include ../includes/header-menu
+    block menu-phone
+        include ../includes/header-menu-phone
+    block slider-logo
+        include ../includes/header-slider-logo
+
 block menu-scroll
     include ../includes/menu-scroll
+
 block main
     include ../includes/main-index
 block footer
