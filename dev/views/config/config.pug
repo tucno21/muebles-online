@@ -1,55 +1,81 @@
-//- aqui debe estar las variables
-//- variable del menu principal
-//- -const pages = ["Ropero", "Respostero", "Comoda", "Estantes", "Mesas", "Sillas", "Camas", "Zapatero"]
-
 //- variable para los menus de muebles
 -const pages = ["roperos", "resposteros", "comodas", "estantes", "mesas", "sillas", "camas", "zapateros"]
 
 
 //- BLOQUE PARA VENTA DE PRODUCTO PRINCIPAL
-mixin ventacategoria(AgregarDato)
-    .box
-        .box_container.box__images
-            img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + ".jpg" alt="foto ropero").box__image
-        .box_container.box__info
-            h2.box__title= AgregarDato.title
-            p.box__codigo Código: 
-                span= AgregarDato.codigo
-            p.box__precio= AgregarDato.precio
+mixin product(AgregarDato)
+    if AgregarDato.ventaindex
+        .salecard
+            .salecard__imagen.salecard__image-index
+                img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "a.jpg" alt="foto ropero").salecard__imagen-index-img
+            .salecard__info.salecard__info-index
+                .salecard__box
+                    h2.salecard__box-title= AgregarDato.title
+                    p.salecard__box-codigo Código:
+                        span= AgregarDato.codigo
+                    p.salecard__box-precio= AgregarDato.precio
+                .salecard__box
+                    if AgregarDato.color
+                        a(href= AgregarDato.codigo + "a.html").salecard__box-bottom.bottom-color Colores
 
-            if AgregarDato.color
-                a(href= AgregarDato.codigo + ".html").box__colores Colores
+                    a(href= AgregarDato.codigo + "a.html").salecard__box-bottom.bottom-comprar Comprar
+                        i.fas.fa-shopping-cart
+    else
+        .salecard.salecard-ventas
+            .salecard__imagen.salecard__image-venta
+                .ventas-slider
+                    img#visor-img.ventas-slider__visor-img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "a.jpg" alt="foto mueble")
+                    img.ventas-slider__thumbnail.ventas-slider__active(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "a.jpg" alt="foto mueble")
+                    img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "b.jpg" alt="foto mueble")
+                    img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "c.jpg" alt="foto mueble")
+                    img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "d.jpg" alt="foto mueble")
 
-            a(href= AgregarDato.codigo + ".html").box__comprar Comprar
-                i.fas.fa-shopping-cart
+            .salecard__info.salecard__info-venta
+                .salecard__box.salecard__box-a
+                    h2.salecard__box-title= AgregarDato.title
+                    p.salecard__box-codigo Código:
+                        span= AgregarDato.codigo
+                    p.salecard__box-precio= AgregarDato.precio
 
-mixin ventapagina(AgregarVenta)
-    .ventapagina
-        .ventapagina__container
-            .ventas-slider
-                img#visor-img.ventas-slider__visor-img(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "a.jpg" alt="foto mueble")
-                img.ventas-slider__thumbnail.ventas-slider__active(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "a.jpg" alt="foto mueble")
-                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "b.jpg" alt="foto mueble")
-                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "c.jpg" alt="foto mueble")
-                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "d.jpg" alt="foto mueble")
-
-        .ventapagina__container
-            .ventapagina__detalles
-                .ventapagina__box
-                    h2.ventapagina__title= AgregarVenta.title
-                    p.ventapagina__codigo Código: 
-                        span= AgregarVenta.codigo
-                    p.ventapagina__precio= AgregarVenta.precio
-
-                .ventapagina__box
-                    a(href="https://wa.me/51910954568" target="_blank").ventapagina__whatsapp Consultar al
+                .salecard__box.salecard__box-b
+                    a(href="https://wa.me/51910954568" target="_blank").salecard__box-bottom.bottom-whatsapp Consultar al
                         i.fab.fa-whatsapp
 
-                    a(href="yape.html").ventapagina__yape Pagar con
+                    input#checkbox-yape(type='checkbox')
+                    label(for='checkbox-yape').salecard__box-bottom.bottom-yape
+                        p Pagar con
                         img(src="assets/img/yape.png" alt="logo yape")
+                    .modal
+                        .modal__container.modal-qryape
+                            .modal_header
+                                p.modal__title Muebles Ayacucho
+                                label.modal__cerrar(for='checkbox-yape') X
+                            .modal__content
+                                p.modal__sibtitle Escanee el código QR con su cuenta Yape
+                                img.modal__yape(src='assets/img/qryape.svg' alt='qr yape')
 
-            a(href="nodal.html").ventapagina__comprar ¿Cómo comprar?
-                i.fas.fa-shopping-cart
+                    input#checkbox-comprar(type='checkbox')
+                    label(for='checkbox-comprar').salecard__box-bottom.bottom-comocomprar
+                        p ¿Cómo comprar?
+                        i.fas.fa-shopping-cart
+                    .modal
+                        .modal__container.modal-comocomprar
+                            .modal_header
+                                p.modal__title Muebles Ayacucho
+                                label.modal__cerrar(for='checkbox-comprar') X
+                            .modal__content
+                                h2.modal-pago__title Formas de Pago
+                                p.modal-pago__subtitle Opcion 1
+                                ul.modal-pago__list
+                                    li.modal-pago__item Anote el código del mueble que desea comprar
+                                    li.modal-pago__item Consulte si existe el producto en WhatsApp con el código
+                                    li.modal-pago__item Page el 50% al número Yape y realice una captura de pantalla
+                                    li.modal-pago__item Envié un mensaje al WhatsApp con los siguientes datos: dirección del lugar, el código del Mueble y captura de pago de yape para enviarle el producto.
+                                    li.modal-pago__item Reciba el producto y page el saldo del 50%
+                                p.modal-pago__subtitle Opcion 2
+                                    ul.modal-pago__lis
+                                        li.modal-pago__item Visite nuestras tiendas
+                                a(href="ubiquenos.html").salecard__box-bottom.bottom-ubiquenos Ubiquenos
 
 
 

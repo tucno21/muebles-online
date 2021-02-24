@@ -1,0 +1,233 @@
+// SOLO PARA PRODUCTO INDIVIDUAL
+.main__container-ventapagina{
+    padding: .8rem;
+
+    @include laptop{
+        padding: .8rem 10%;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.salecard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.4);
+    // border: 1px solid red;
+    background-color: #fff;
+    box-shadow: $shade;
+    border-radius: 1rem;
+
+    &__image-index{
+        width: 60%;
+        padding: 1rem;
+    }
+    
+    &__imagen-index-img{
+        border-radius: 1rem;
+        box-shadow: $shade;
+    }
+
+    &__info-index{
+        width: 40%;
+        padding: .5rem;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        font-family: $font-archivo;
+        justify-content: space-between;
+        // align-items:;
+
+        &-title{
+            margin: 0;
+        }
+
+        &-codigo{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: $blue-bottom;
+        }
+
+        &-precio{
+            font-size: 2rem;
+        }
+    }
+
+    // BOTTOM
+
+    &__box-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        color: $white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        padding: .8rem 0;
+        min-width: 80%;
+        width: 90%;
+        height: 2.2rem;
+        margin-top: .9rem;
+        border-radius: 1rem;
+        box-shadow: $shade;
+
+    }
+
+    // SECCION VENTAS - INDIVIDUAL
+
+    &-ventas{
+        flex-direction: column;
+        // border: 1px solid red;
+        // padding: 1rem;
+
+        @include laptop{
+            flex-direction: row;
+        }
+    }
+
+    &__image-venta{
+        border: 1px solid rgba(0,0,0,.2);
+        box-shadow: $shade;
+        // border: 1px solid red;
+        padding: .8rem;
+        margin: .5rem;
+        border-radius: 1rem;
+    }
+
+    &__info-venta{
+        border: 1px solid rgba(0,0,0,.2);
+        box-shadow: $shade;
+        display: flex;
+        border-radius: 1rem;
+        padding: .8rem;
+        margin: .5rem;
+
+        @include laptop{
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+
+    &__box-a,
+    &__box-b{
+        padding: .4rem;
+        width: 50%;
+        
+        @include laptop{
+            width: 100%;
+        }
+    }
+
+}
+
+// BOTONES INDEPENDIENTES
+
+.bottom-color{
+    background-color: $blue-bottom;
+}
+
+.bottom-comprar{
+    background-color: $blue-bottom;
+    & i{
+        margin-left: .5rem;
+    }
+}
+
+.bottom-whatsapp{
+    background-color: #00bb2d;
+    & i{
+        margin-left: .5rem;
+    }
+}
+
+.bottom-yape{
+    background-color: $blue-bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img{
+        margin-left: .5rem;
+        width: 2rem;
+        border-radius: .5rem;
+    }
+}
+
+.bottom-comocomprar{
+    background-color: $blue-bottom;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    & p,
+    & i{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+// CONTENIDO SLIDER
+.ventas-slider{
+	// position: relative;
+	// left: 50%;
+	// transform: translateX(-50%);
+	// padding: 5px;
+	// width: 85vw;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+
+    &__visor-img,
+    &__thumbnail{
+        width: 95%;
+        object-fit: contain;
+        padding: .3rem;
+    }
+    
+    &__visor-img{
+        grid-column: 1 / -1;
+        height: 300px;
+    }
+    
+    &__thumbnail{
+        border: 2px solid $Brown;
+        cursor: pointer;
+        height: 60px;
+        width: 80%;
+        opacity: 0.4;
+        // margin: 0 9px;
+    }
+
+    &__thumbnail:hover,
+    &__active{
+        opacity:1;
+    }
+
+    @include laptop{
+        width: 40vw;
+
+        &__visor-img{
+            height: 300px;
+        }
+    
+        &__thumbnail{
+            height: 50px;
+        }
+    }
+}
+
+#checkbox-yape,
+#checkbox-comprar{
+    display: none;
+}
+
+.modal{
+    display: none;
+}

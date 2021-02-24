@@ -52,19 +52,61 @@
     <main class="main" id="main">
       <div class="grupo-muebles"></div>
       <div class="main__container-ventapagina">
-        <div class="ventapagina">
-          <div class="ventapagina__container">
+        <div class="salecard salecard-ventas">
+          <div class="salecard__imagen salecard__image-venta">
             <div class="ventas-slider"><img class="ventas-slider__visor-img" id="visor-img" src="assets/img/gallery/ropero/rop001a.jpg" alt="foto mueble"/><img class="ventas-slider__thumbnail ventas-slider__active" src="assets/img/gallery/ropero/rop001a.jpg" alt="foto mueble"/><img class="ventas-slider__thumbnail" src="assets/img/gallery/ropero/rop001b.jpg" alt="foto mueble"/><img class="ventas-slider__thumbnail" src="assets/img/gallery/ropero/rop001c.jpg" alt="foto mueble"/><img class="ventas-slider__thumbnail" src="assets/img/gallery/ropero/rop001d.jpg" alt="foto mueble"/></div>
           </div>
-          <div class="ventapagina__container">
-            <div class="ventapagina__detalles">
-              <div class="ventapagina__box">
-                <h2 class="ventapagina__title">Ropero con Cajones y espejo</h2>
-                <p class="ventapagina__codigo">Código: <span>rop001</span></p>
-                <p class="ventapagina__precio">S/ 900</p>
+          <div class="salecard__info salecard__info-venta">
+            <div class="salecard__box salecard__box-a">
+              <h2 class="salecard__box-title">Ropero con Cajones y espejo</h2>
+              <p class="salecard__box-codigo">Código:<span>rop001</span></p>
+              <p class="salecard__box-precio">S/ 1900</p>
+            </div>
+            <div class="salecard__box salecard__box-b"><a class="salecard__box-bottom bottom-whatsapp" href="https://wa.me/51910954568" target="_blank">Consultar al<i class="fab fa-whatsapp"></i></a>
+              <input id="checkbox-yape" type="checkbox"/>
+              <label class="salecard__box-bottom bottom-yape" for="checkbox-yape">
+                <p>Pagar con</p><img src="assets/img/yape.png" alt="logo yape"/>
+              </label>
+              <div class="modal">
+                <div class="modal__container modal-qryape">
+                  <div class="modal_header">
+                    <p class="modal__title">Muebles Ayacucho</p>
+                    <label class="modal__cerrar" for="checkbox-yape">X</label>
+                  </div>
+                  <div class="modal__content">
+                    <p class="modal__sibtitle">Escanee el código QR con su cuenta Yape</p><img class="modal__yape" src="assets/img/qryape.svg" alt="qr yape"/>
+                  </div>
+                </div>
               </div>
-              <div class="ventapagina__box"><a class="ventapagina__whatsapp" href="https://wa.me/51910954568" target="_blank">Consultar al<i class="fab fa-whatsapp"></i></a><a class="ventapagina__yape" href="yape.html">Pagar con<img src="assets/img/yape.png" alt="logo yape"/></a></div>
-            </div><a class="ventapagina__comprar" href="nodal.html">¿Cómo comprar?<i class="fas fa-shopping-cart"></i></a>
+              <input id="checkbox-comprar" type="checkbox"/>
+              <label class="salecard__box-bottom bottom-comocomprar" for="checkbox-comprar">
+                <p>¿Cómo comprar?</p><i class="fas fa-shopping-cart"></i>
+              </label>
+              <div class="modal">
+                <div class="modal__container modal-comocomprar">
+                  <div class="modal_header">
+                    <p class="modal__title">Muebles Ayacucho</p>
+                    <label class="modal__cerrar" for="checkbox-comprar">X</label>
+                  </div>
+                  <div class="modal__content">
+                    <h2 class="modal-pago__title">Formas de Pago</h2>
+                    <p class="modal-pago__subtitle">Opcion 1</p>
+                    <ul class="modal-pago__list">
+                      <li class="modal-pago__item">Anote el código del mueble que desea comprar</li>
+                      <li class="modal-pago__item">Consulte si existe el producto en WhatsApp con el código</li>
+                      <li class="modal-pago__item">Page el 50% al número Yape y realice una captura de pantalla</li>
+                      <li class="modal-pago__item">Envié un mensaje al WhatsApp con los siguientes datos: dirección del lugar, el código del Mueble y captura de pago de yape para enviarle el producto.</li>
+                      <li class="modal-pago__item">Reciba el producto y page el saldo del 50%</li>
+                    </ul>
+                    <p class="modal-pago__subtitle">Opcion 2
+                      <ul class="modal-pago__lis">
+                        <li class="modal-pago__item">Visite nuestras tiendas</li>
+                      </ul>
+                    </p><a class="salecard__box-bottom bottom-ubiquenos" href="ubiquenos.html">Ubiquenos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

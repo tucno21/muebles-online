@@ -14,11 +14,27 @@ block main
         //- p.grupo-muebles__content Tenemos Camas de diferentes tamaños y modelos en madera y metal
 
     .main__container-ventapagina
-
-        - const rop001 = {dirIMG: 'ropero/', codigo: 'rop001', title: 'Ropero con Cajones y espejo', precio: 'S/ 900'}
-        +ventapagina (rop001)
+        //- ============================================
+        - var ventaindex = false
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con Cajones y espejo'
+        - var precio = 'S/ 1900'
+        - var color = true
+        - const rop001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop001a)
 
 
 
 block footer
     include ../includes/footer
+
+
+
+
+
+
+
+
+
+        //- - const rop001 = {dirIMG: 'ropero/', codigo: 'rop001', title: 'Ropero con Cajones y espejo', precio: 'S/ 900'}

@@ -14,24 +14,60 @@ block main
         p.grupo-muebles__content Tenemos zapateros de diferentes tamaños y modelos en melamine y MDF
 
     .main__container-index
-
-        - const rop001a = {dirIMG: 'ropero/', codigo: 'rop001a', title: 'Ropero con Cajones y espejo', precio: 'S/ 900', color: true}
-        +ventacategoria (rop001a)
-
-        - const rep001a = {dirIMG: 'ropero/',codigo: 'rep001a', title: 'repostero mediano con cucharera', precio: 'S/ 300', color: false}
-        +ventacategoria (rep001a)
-
-        - const mes001a = {dirIMG: 'ropero/',codigo: 'mes001a', title: 'mesa con tablero de melamine y metal', precio: 'S/ 180', color: false}
-        +ventacategoria (mes001a)
-
-        - const sill001a = {dirIMG: 'ropero/',codigo: 'sill001a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
-        +ventacategoria (sill001a)
-
-        - const com001a = {dirIMG: 'ropero/',codigo: 'com001a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
-        +ventacategoria (com001a)
-
-        - const com002a = {dirIMG: 'ropero',codigo: 'com002a', title: 'Silla de Madera para Comedor', precio: 'S/ 80', color: false}
-        +ventacategoria (com002a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con Cajones y espejo'
+        - var precio = 'S/ 1900'
+        - var color = true
+        - const rop001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop001a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero grande de melamine'
+        - var precio = 'S/ 190'
+        - var color = false
+        - const rop002a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop002a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con dos puertas'
+        - var precio = 'S/ 900'
+        - var color = false
+        - const rop003a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop003a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con Cajones y espejo'
+        - var precio = 'S/ 1900'
+        - var color = true
+        - const rop004a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop004a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con Cajones y espejo'
+        - var precio = 'S/ 1900'
+        - var color = true
+        - const rop005a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop005a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'ropero/'
+        - var codigo = 'rop001'
+        - var title = 'Ropero con Cajones y espejo'
+        - var precio = 'S/ 1900'
+        - var color = true
+        - const rop006a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rop006a)
 
         //- include ../includes/main-index
 
