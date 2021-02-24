@@ -312,6 +312,55 @@ img { max-width: 100%; }
 
 @media screen and (min-width: 1024px) { .grupo-muebles { padding-top: 7rem; width: 60%; } }
 
+.main__container-ventapagina { padding: .5rem; }
+
+.ventas-slider { display: grid; gap: 5px; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, auto); }
+
+.ventas-slider__visor-img, .ventas-slider__thumbnail { border: 2px solid var(--Brown); width: 95%; -o-object-fit: contain; object-fit: contain; padding: .3rem; }
+
+.ventas-slider__visor-img { grid-column: 1 / -1; height: 400px; }
+
+.ventas-slider__thumbnail { cursor: pointer; height: 60px; width: 80%; opacity: 0.4; }
+
+.ventas-slider__thumbnail:hover, .ventas-slider__active { opacity: 1; }
+
+@media screen and (min-width: 1024px) { .ventas-slider { width: 40vw; }
+  .ventas-slider__visor-img { height: 300px; }
+  .ventas-slider__thumbnail { height: 50px; } }
+
+.ventapagina__container { border: 1px solid rgba(0, 0, 0, 0.4); background-color: #fff; margin: 1rem; padding: .8rem; font-family: "Archivo", sans-serif; box-shadow: var(--shade); }
+
+.ventapagina__detalles { display: flex; }
+
+.ventapagina__box { width: 50%; }
+
+.ventapagina__box a { display: flex; justify-content: center; align-items: center; text-decoration: none; color: var(--white); font-size: 1.5rem; font-weight: bold; margin: 1rem 0; padding: 1rem; text-align: center; border-radius: .5rem; }
+
+@media screen and (min-width: 1024px) { .ventapagina__box a { width: 50%; } }
+
+.ventapagina__box a img { display: block; margin-left: .9rem; width: 25%; border-radius: 25%; border: 1px solid var(--white); }
+
+.ventapagina__box i { margin-left: .7rem; }
+
+.ventapagina__title { font-size: 1.8rem; }
+
+.ventapagina__codigo { font-size: 1.3rem; font-weight: bold; }
+
+.ventapagina__precio { font-size: 2.2rem; font-weight: bold; }
+
+.ventapagina__whatsapp { background-color: #00BB2D; }
+
+.ventapagina__yape { background-color: #8C149C; }
+
+@media screen and (min-width: 1024px) { .ventapagina { display: flex; padding: 0 10%; }
+  .ventapagina__detalles { flex-direction: column; padding: .2rem 2rem; }
+  .ventapagina__box { width: 100%; }
+  .ventapagina__title { font-size: 2rem; } }
+
+.ventapagina__comprar { display: block; text-decoration: none; font-size: 1.5rem; font-weight: bold; color: var(--white); background-color: var(--blue-bottom); width: 60%; text-align: center; padding: 1.5rem 0; border-radius: .5rem; position: relative; left: 50%; transform: translateX(-50%); }
+
+@media screen and (min-width: 1024px) { .ventapagina__comprar { left: 2rem; transform: translateX(0); } }
+
 .footer { background-color: #2C3E50; padding: .1rem 3rem; color: var(--white); font-size: 1.15rem; font-family: "Archivo", sans-serif; }
 
 .footer__contacto { font-weight: bold; text-transform: uppercase; font-size: 1.8rem; }

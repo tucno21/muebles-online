@@ -10,8 +10,13 @@ block menu-scroll
 
 block main
     .grupo-muebles
-        h2.grupo-muebles__title Camas
-        p.grupo-muebles__content Tenemos Camas de diferentes tamaños y modelos en madera y metal
+        //- h2.grupo-muebles__title Camas
+        //- p.grupo-muebles__content Tenemos Camas de diferentes tamaños y modelos en madera y metal
+
+    .main__container-ventapagina
+
+        - const rop001 = {dirIMG: 'ropero/', codigo: 'rop001', title: 'Ropero con Cajones y espejo', precio: 'S/ 900'}
+        +ventapagina (rop001)
 
 
 

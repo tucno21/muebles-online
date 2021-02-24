@@ -23,6 +23,34 @@ mixin ventacategoria(AgregarDato)
             a(href= AgregarDato.codigo + ".html").box__comprar Comprar
                 i.fas.fa-shopping-cart
 
+mixin ventapagina(AgregarVenta)
+    .ventapagina
+        .ventapagina__container
+            .ventas-slider
+                img#visor-img.ventas-slider__visor-img(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "a.jpg" alt="foto mueble")
+                img.ventas-slider__thumbnail.ventas-slider__active(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "a.jpg" alt="foto mueble")
+                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "b.jpg" alt="foto mueble")
+                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "c.jpg" alt="foto mueble")
+                img.ventas-slider__thumbnail(src="assets/img/gallery/" + AgregarVenta.dirIMG + AgregarVenta.codigo + "d.jpg" alt="foto mueble")
+
+        .ventapagina__container
+            .ventapagina__detalles
+                .ventapagina__box
+                    h2.ventapagina__title= AgregarVenta.title
+                    p.ventapagina__codigo Código: 
+                        span= AgregarVenta.codigo
+                    p.ventapagina__precio= AgregarVenta.precio
+
+                .ventapagina__box
+                    a(href="https://wa.me/51910954568" target="_blank").ventapagina__whatsapp Consultar al
+                        i.fab.fa-whatsapp
+
+                    a(href="yape.html").ventapagina__yape Pagar con
+                        img(src="assets/img/yape.png" alt="logo yape")
+
+            a(href="nodal.html").ventapagina__comprar ¿Cómo comprar?
+                i.fas.fa-shopping-cart
+
 
 
 
