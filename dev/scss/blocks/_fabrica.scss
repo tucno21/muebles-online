@@ -14,23 +14,23 @@
     padding: 2rem;
     box-shadow: $shade;
     border-radius: 1rem;
-    font-family: $font-archivo;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0,.3);
+    border: $border-line;
     background-color: #fff;
     text-align: center;
 
     &__title{
-        font-size: 2.5rem;
-        font-weight: bold;
+        font-size: $size-font-page-title;
+        // font-weight: bold;
         text-decoration: underline;
         text-transform: uppercase;
         margin: .5rem 0;
     }
 
     &__contenido{
-        font-size: 1.7rem;
+        font-size: $size-font-page-subtitle;
+        margin: 1rem 0;
     }
 
     &__imagen{
@@ -39,13 +39,11 @@
     }
 
     &__link{
-        // border: 1px solid red;
-        width: 60%;
+        width: 50%;
         padding: 1rem;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: $size-font-page-subtitle;
         position: relative;
-        margin: .6rem auto;
+        margin: .8rem auto;
         border-radius: 1rem;
         box-shadow: $shade;
 
@@ -56,7 +54,7 @@
         
         & i{
             margin-left: 1rem;
-            font-size: 2.5rem;
+            // font-size: 2.5rem;
         }
     }
 
@@ -69,14 +67,14 @@
     }
 
     @include laptop{
-        max-width: 60vw;
+        max-width: 50vw;
 
         &__imagen{
             width: 40%;
         }
 
         &__link{
-            width: 40%;
+            width: 35%;
         }
     }
 }

@@ -1,15 +1,17 @@
 // MENU HOIZONTAL SCROLL
 .menu{
-    font-size: 1.4rem;
+    font-size: $size-font-menu-scroll;
     background-color: $yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 1rem 0;
+    padding: .7rem 0;
     z-index: 10;
     position: sticky;
     top: 4.8rem;
+    border-top: 1px solid $Brown;
+    border-bottom: 1px solid $Brown;
     // width: 100%;
     
     &__box{
@@ -27,21 +29,21 @@
         border: none;
         margin: 0 1rem;
         box-shadow: $shade;
-        margin-bottom: .6rem;
+        // margin-bottom: .6rem;
         border-radius: .7rem;
     }
 
     &__link{
         display: inline-block;
         text-decoration: none;
-        font-family: $font-archivo;
+        // font-family: $font-archivo;
         text-transform: uppercase;
-        font-weight: 200;
+        // font-weight: 200;
         color: $white;
         text-align: center;
         background-color: $Brown;
         padding: 1rem 1.5rem;
-        border-radius: .7rem;
+        border-radius: $curve-little;
     }
 
     &__icon{
@@ -50,7 +52,8 @@
     }
 
     @include laptop{
-        top: 6rem;
+        top: 5rem;
+        font-size: $size-font-menu-scroll-laptop;
         &__box{
     
             &::-webkit-scrollbar{

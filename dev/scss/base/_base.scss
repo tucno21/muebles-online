@@ -4,16 +4,15 @@ html{
     font-size: 62.5%;
     padding: 0;
     box-sizing: border-box;
-    & h1{
-        margin: 0;
-    }
+    font-family: $font-Poppins;
 }
 
 body{
     background-color: $background-color;
 }
 
-// p{
-//     font-size: 3rem;
-// }
+p, span, h1, h2, h3, h4, i{
+    margin: 0;
+    padding: 0;
+}
 

@@ -1,17 +1,16 @@
 .slider{
 margin: 0;
 padding: 0;
-padding-top: 5.4rem;
+padding-top: 5.2rem;
 padding-bottom: .4rem;
 // height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-// background: #23E3C9;
 background: $background-color;
     
     @include laptop{
-        padding-top: 7rem;
+        padding-top: 6rem;
         padding-bottom: 1rem;
     }
 

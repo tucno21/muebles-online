@@ -15,34 +15,34 @@
     padding: 1.5rem;
     box-shadow: $shade;
     text-align: center;
-    border-radius: 1rem;
-    font-family: $font-archivo;
+    border-radius: $curve-big;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(0,0,0,.3);
+    border: $border-line;
     background-color: #fff;
     
     &__title{
-        font-size: 2.5rem;
-        font-weight: bold;
+        font-size: $size-font-page-title;
+        // font-weight: bold;
         text-decoration: underline;
         text-transform: uppercase;
-        margin: .5rem 0;
     }
     
     &__direccion{
-        font-size: 2rem;
+        font-size: $size-font-page-subtitle;
+        margin: 1rem 0;
     }
 
     &__telefono{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
-        border: solid 1px #000;
+        font-size: $size-font-page-subtitle;
+        border: $border-line;
+        font-weight: $line-font-semi-thick;
         margin-bottom: 1rem;
-        width: 70%;
+        min-width: 16rem;
         
         & p,
         & i{
@@ -54,10 +54,10 @@
 
     &__imagen{
         box-shadow: $shade;
-        border-radius: 1rem;
+        border-radius: $curve-big;
     }
 
     @include laptop{
-        min-width: 60vw;
+        min-width: 50vw;
     }
 }

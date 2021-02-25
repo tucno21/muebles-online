@@ -60,7 +60,7 @@
         background-color: #fff;
         margin: 1rem;
         padding: .8rem;
-        font-family: $font-archivo;
+        // font-family: $font-archivo;
         box-shadow: $shade;
     }
     
@@ -79,8 +79,8 @@
             // background-color: red;
             text-decoration: none;
             color: $white;
-            font-size: 1.5rem;
-            font-weight: bold;
+            // font-size: 1.5rem;
+            // font-weight: bold;
             margin: 1rem 0;
             padding: 1rem;
             text-align: center;
@@ -106,16 +106,16 @@
     }
 
     &__title{
-        font-size: 1.8rem;
+        // font-size: 1.8rem;
     }
 
     &__codigo{
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         font-weight: bold;
     }
 
     &__precio{
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
         font-weight: bold;
     }
 
@@ -131,7 +131,7 @@
         // background-color: red;
         text-decoration: none;
         color: $white;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
         font-weight: bold;
         margin: 1rem 0;
         padding: 1rem;
@@ -166,7 +166,7 @@
         }
 
         &__title{
-            font-size: 2rem;
+            // font-size: 2rem;
         }
     }
 }
@@ -174,7 +174,7 @@
 .ventapagina__comprar{
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     font-weight: bold;
     color: $white;
     background-color: $blue-bottom;
@@ -223,7 +223,7 @@
     background-color: $Brown;
     color: #fff;
     padding: 0 16px;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
 }
 
 #checkbox-yape,
@@ -238,7 +238,7 @@
 }
 
 .modal__cerrar{
-    font-family: sans-serif;
+    // font-family: sans-serif;
     font-weight: bold;
 }
 
@@ -247,7 +247,7 @@
 }
 
 .modal__sibtitle{
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
     margin: 0;
     padding: 0;
 }

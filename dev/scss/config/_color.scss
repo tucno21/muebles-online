@@ -6,7 +6,11 @@
     --brown-bottom: #91684A;
     --white:#ECF0F1;
     --shade: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    --border-line: 1px solid rgba(0, 0, 0, 0.2);
+    --linea: 1px solid red;
+    --curve-little:.5rem;
+    --curve-big:1rem;
+    --curve-bottom:.5rem;
 }
 
 $background-color:var(--background-color);
@@ -16,3 +20,8 @@ $blue-bottom:var(--blue-bottom);
 $brown-bottom:var(--brown-bottom);
 $white:var(--white);
 $shade:var(--shade);
+$border-line:var(--border-line);
+$linea:var(--linea);
+$curve-little:var(--curve-little);
+$curve-big:var(--curve-little);
+$curve-bottom:var(--curve-bottom);

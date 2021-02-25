@@ -3,7 +3,7 @@
     padding: .8rem;
 
     @include laptop{
-        padding: .8rem 10%;
+        padding: .8rem 16%;
     }
 }
 
@@ -12,49 +12,62 @@ img{
 }
 
 .salecard{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0,0,0,.4);
+    border: $border-line;
     // border: 1px solid red;
     background-color: #fff;
     box-shadow: $shade;
-    border-radius: 1rem;
+    border-radius: $curve-big;
 
     &__image-index{
-        width: 60%;
+        width: 50%;
         padding: 1rem;
+        text-align: center;
     }
     
     &__imagen-index-img{
-        border-radius: 1rem;
+        max-width: 80%;
+        border-radius: $curve-big;
         box-shadow: $shade;
     }
 
     &__info-index{
-        width: 40%;
+        height: 92%;
+        width: 50%;
         padding: .5rem;
+        // border: $linea;
     }
 
     &__box{
+        // border: $linea;
+        height: 50%;
         display: flex;
         flex-direction: column;
-        font-family: $font-archivo;
-        justify-content: space-between;
-        // align-items:;
+        justify-content: flex-start;
+
+        &-y{
+            justify-content: flex-end;
+        }
 
         &-title{
-            margin: 0;
+            font-size: $size-font-card-title;
+            font-weight: $line-font-semi-thick;
+            // margin-bottom: .5rem;
         }
 
         &-codigo{
-            font-size: 1.3rem;
-            font-weight: bold;
+            font-size: $size-font-card-subtitle;
+            font-weight: $line-font-semi-thick;
             color: $blue-bottom;
+            margin: 1.2rem 0;
         }
 
         &-precio{
-            font-size: 2rem;
+            font-size: $size-font-card-precio;
+            // margin: 1rem 0;
         }
     }
 
@@ -64,18 +77,19 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: red;
+        // background-color: red;
         color: $white;
         text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: bold;
+        font-size: $size-font-card-subtitle;
+        // font-weight: bold;
         text-align: center;
         padding: .8rem 0;
         min-width: 80%;
         width: 90%;
-        height: 2.2rem;
-        margin-top: .9rem;
-        border-radius: 1rem;
+        height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: .3rem;
+        border-radius: $curve-bottom;
         box-shadow: $shade;
 
     }
@@ -83,6 +97,7 @@ img{
     // SECCION VENTAS - INDIVIDUAL
 
     &-ventas{
+        height: 100%;
         flex-direction: column;
         // border: 1px solid red;
         // padding: 1rem;
@@ -93,17 +108,19 @@ img{
     }
 
     &__image-venta{
-        border: 1px solid rgba(0,0,0,.2);
-        box-shadow: $shade;
+        // border: $border-line;
+        // box-shadow: $shade;
         // border: 1px solid red;
         padding: .8rem;
         margin: .5rem;
-        border-radius: 1rem;
+        border-radius: $curve-big;
     }
 
     &__info-venta{
-        border: 1px solid rgba(0,0,0,.2);
-        box-shadow: $shade;
+        height: 100%;
+        // border: $border-line;
+        // border: 1px solid red;
+        // box-shadow: $shade;
         display: flex;
         border-radius: 1rem;
         padding: .8rem;
@@ -117,12 +134,19 @@ img{
 
     &__box-a,
     &__box-b{
+        // border: 1px solid red;
         padding: .4rem;
         width: 50%;
+        height: 15rem;
         
         @include laptop{
+            height: 18rem;
             width: 100%;
+            max-height: 90%;
         }
+    }
+    &__box-a{
+        padding-top: 1rem;
     }
 
 }
@@ -162,8 +186,8 @@ img{
 
 .bottom-comocomprar{
     background-color: $blue-bottom;
-    font-size: 1.4rem;
-    font-weight: lighter;
+    // font-size: 1.4rem;
+    // font-weight: lighter;
     & p,
     & i{
         margin: 0;
@@ -193,7 +217,10 @@ img{
     
     &__visor-img{
         grid-column: 1 / -1;
-        height: 300px;
+        height: 250px;
+        @include laptop{
+            height: 300px;
+        }
     }
     
     &__thumbnail{

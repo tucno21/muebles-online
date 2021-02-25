@@ -7,7 +7,7 @@
 .menu__show{
     color: $white;
     padding-left: 1rem;
-    font-size: 2.8rem;
+    font-size: $size-font-header-show;
 
     @include laptop{
         display: none;
@@ -32,18 +32,18 @@
 
         @include laptop{
             width: auto;
-            height: 6rem;
+            // height: 5rem;
         }
     }
 
     &__title,
     &__icon{
         padding: 0 1rem;
-        font-size: 2.8rem;
+        font-size: $size-font-header;
         font-family: $font-oswald;
 
         @include laptop{
-            font-size: 4rem;
+            font-size: $size-font-header-laptop;
         }
     }
 
@@ -64,26 +64,27 @@
     transition: transform .3s;
     transform: translateX(-100%);
     position: fixed;
-    width: 100%;
+    width: 80%;
     
     &__item{
         border-bottom: 1px solid $white;
-        
+        border-right: 2px solid $white;
     }
+    
     &__link{
         display: block;
         padding: 1rem 1.5rem;
         text-decoration: none;
         color: $white;
-        font-size: 2rem;
-        font-family: $font-archivo;
+        font-size: $size-font-header-menu;
+        // font-family: $font-archivo;
     }
 
     @include laptop{
         position: relative;
         width: auto;
         background-color: $Brown;
-        height: 6rem;
+        height: 5rem;
         display: flex;
         align-items: center;
         transform: translateX(0);
@@ -93,7 +94,7 @@
         }
 
         &__link{
-            font-size: 1.4rem;
+            font-size: $size-font-header-menu-laptop;
 
             &:hover{
                 color: $yellow;
@@ -107,14 +108,15 @@
     @include reset-list;
     background-color: $Brown;
     position: fixed;
-    top: 22.4rem;
-    width: 100%;
+    top: 20.5rem;
+    width: 80%;
     transition: transform .3s;
     transform: translateX(-100%);
     z-index: 100;
     
     &__item{
         border-bottom: 1px solid $white;
+        border-right: 2px solid $white;
         
     }
     &__link{
@@ -122,8 +124,9 @@
         padding: 1rem 3.5rem;
         text-decoration: none;
         color: $white;
-        font-size: 2rem;
-        font-family: $font-archivo;
+        font-size: $size-font-header-menu;
+        font-weight: $line-font-slim;
+        // font-family: $font-archivo;
         text-transform: uppercase;
     }
 
@@ -137,17 +140,3 @@
     transition: transform .3s;
     transform: translate(0);
 }
-
-// IMAGE PORTADA
-.header_logo-img{
-    height: 27rem;
-    background-color: aqua;
-    padding-top: 6rem;
-    text-align: center;
-
-    & img{
-        max-width: 100%;
-    }
-}
-
-

@@ -1,8 +1,7 @@
 .grupo-muebles{
     padding-top: 6rem;
     text-align: center;
-    font-family: $font-archivo;
-    font-size: 3rem;
+    font-size: $size-font-page-title;
     width: 90%;
     position: relative;
     left: 50%;
@@ -13,7 +12,7 @@
     }
 
     &__content{
-        font-size: 2rem;
+        font-size: $size-font-page-subtitle;
         margin: 0;
         margin-top: 1rem;
     }

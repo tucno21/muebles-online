@@ -1,14 +1,15 @@
 .footer{
     background-color: #2C3E50;
-    padding: .1rem 3rem;
+    padding: .15rem 3rem;
     color: $white;
-    font-size: 1.15rem;
-    font-family: $font-archivo;
+    font-size: $size-font-footer;
+    font-weight: $line-font-slim;
 
     &__contacto{
-        font-weight: bold;
+        margin-top: 1.5rem;
+        font-size: $size-font-footer-contact;
+        font-weight: $line-font-thick;
         text-transform: uppercase;
-        font-size: 1.8rem;
     }
 
     &__home,
@@ -23,8 +24,8 @@
     }
 
     @include laptop{
-        font-size: 1.5rem;
-        padding: .1rem 12rem;
+        font-size: $size-font-footer-laptop;
+        padding: .15rem 12%;
 
         &__direccion,
         &__telefono{

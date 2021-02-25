@@ -14,29 +14,27 @@
     margin: 2.5rem 0;
     padding: 2rem;
     box-shadow: $shade;
-    border-radius: 1rem;
-    font-family: $font-archivo;
+    border-radius: $curve-big;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0,.3);
+    border: $border-line;
     background-color: #fff;
 
     &__title{
-        font-size: 2.5rem;
-        font-weight: bold;
+        font-size: $size-font-page-title;
         text-decoration: underline;
         text-transform: uppercase;
-        margin: .5rem 0;
         text-align: center;
     }
 
     &__subtitle{
-        font-size: 1.8rem;
-        font-weight: bold;
+        margin-top: 1rem;
+        font-size: $size-font-page-subtitle;
+        font-weight: $line-font-semi-thick;
     }
 
     &__item{
-        font-size: 1.6rem;
+        font-size: $size-font-page-subtitle;
         margin: .5rem 0;
     }
 
@@ -46,17 +44,17 @@
         text-decoration: none;
         text-align: center;
         background-color: $blue-bottom;
-        width: 60%;
+        max-width: 15rem;
         color: $white;
         padding: 1rem;
-        font-size: 2rem;
-        border-radius: 1rem;
+        font-size: $size-font-page-subtitle;
+        border-radius: $curve-bottom;
         left: 50%;
         transform: translateX(-50%);
         box-shadow: $shade;
     }
 
     @include laptop{
-        max-width: 60vw;
+        max-width: 50vw;
     }
 }
