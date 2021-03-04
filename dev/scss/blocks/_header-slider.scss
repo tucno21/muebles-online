@@ -23,6 +23,10 @@ background: $background-color;
 width: 95vw;
 
     @include laptop{
+        width: 88vw;
+    }
+
+    @include laptop{
         width: 80vw;
     }
 }
@@ -32,8 +36,12 @@ width: 95vw;
 .slides__images img{
 height: 160px;
 
+    @include tablet{
+        height: 300px;
+    }
+
     @include laptop{
-        height: 450px;
+        height: 470px;
     }
 
 }

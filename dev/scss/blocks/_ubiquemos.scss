@@ -57,6 +57,10 @@
         border-radius: $curve-big;
     }
 
+    @include tablet{
+        min-width: 75vw;
+    }
+
     @include laptop{
         min-width: 50vw;
     }

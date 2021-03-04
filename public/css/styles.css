@@ -164,11 +164,15 @@ p, span, h1, h2, h3, h4, i { margin: 0; padding: 0; }
 
 .slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 95vw; }
 
+@media screen and (min-width: 1024px) { .slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 88vw; } }
+
 @media screen and (min-width: 1024px) { .slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 80vw; } }
 
 .slider__container, .slides, .slides__images img { height: 160px; }
 
-@media screen and (min-width: 1024px) { .slider__container, .slides, .slides__images img { height: 450px; } }
+@media screen and (min-width: 500px) { .slider__container, .slides, .slides__images img { height: 300px; } }
+
+@media screen and (min-width: 1024px) { .slider__container, .slides, .slides__images img { height: 470px; } }
 
 .slider__container { border-radius: 10px; overflow: hidden; }
 
@@ -224,7 +228,9 @@ p, span, h1, h2, h3, h4, i { margin: 0; padding: 0; }
 
 .main__container-index { padding: 2rem; display: grid; grid-template-columns: 1fr; gap: 2rem; }
 
-@media screen and (min-width: 1024px) { .main__container-index { padding: 4rem 7rem; grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
+@media screen and (min-width: 500px) { .main__container-index { padding: 3rem 4rem; grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+
+@media screen and (min-width: 1024px) { .main__container-index { padding: 4rem 7rem; grid-template-columns: repeat(3, 1fr); gap: 2.3rem; } }
 
 .main__container-ubiquenos { padding-top: 5rem; padding-bottom: .5rem; padding-left: 2rem; padding-right: 2rem; display: flex; flex-direction: column; align-items: center; }
 
@@ -239,6 +245,8 @@ p, span, h1, h2, h3, h4, i { margin: 0; padding: 0; }
 .ubicacion-local__telefono p, .ubicacion-local__telefono i { padding: .5rem 0; margin: 0; margin-left: 1rem; }
 
 .ubicacion-local__imagen { box-shadow: var(--shade); border-radius: var(--curve-little); }
+
+@media screen and (min-width: 500px) { .ubicacion-local { min-width: 75vw; } }
 
 @media screen and (min-width: 1024px) { .ubicacion-local { min-width: 50vw; } }
 
@@ -299,6 +307,8 @@ img { max-width: 100%; }
 .salecard__image-index { width: 50%; padding: 1rem; text-align: center; }
 
 .salecard__imagen-index-img { max-width: 80%; border-radius: var(--curve-little); box-shadow: var(--shade); }
+
+@media screen and (min-width: 1024px) { .salecard__imagen-index-img { max-width: 70%; } }
 
 .salecard__info-index { height: 92%; width: 50%; padding: .5rem; }
 

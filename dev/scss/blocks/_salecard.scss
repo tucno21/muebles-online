@@ -32,6 +32,10 @@ img{
         max-width: 80%;
         border-radius: $curve-big;
         box-shadow: $shade;
+
+        @include laptop{
+            max-width: 70%;
+        }
     }
 
     &__info-index{

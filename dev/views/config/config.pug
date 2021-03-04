@@ -7,7 +7,8 @@ mixin product(AgregarDato)
     if AgregarDato.ventaindex
         .salecard
             .salecard__imagen.salecard__image-index
-                img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "a.jpg" alt="foto ropero").salecard__imagen-index-img
+                a(href= AgregarDato.codigo + "a.html")
+                    img(src="assets/img/gallery/" + AgregarDato.dirIMG + AgregarDato.codigo + "a.jpg" alt="foto ropero").salecard__imagen-index-img
             .salecard__info.salecard__info-index
                 .salecard__box.salecard__box-x
                     h2.salecard__box-title= AgregarDato.title
