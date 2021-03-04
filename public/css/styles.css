@@ -388,9 +388,9 @@ img { max-width: 100%; }
 
 .modal-pago__item { font-size: 1.3rem; }
 
-#checkbox-yape:checked ~ .modal-qryape { transform: scale(1); z-index: 1000; }
+@media screen and (min-width: 1024px) { .modal .modal__container { transform: scale(1.2); } }
 
-#checkbox-comprar:checked ~ .modal-comocomprar { transform: scale(1); z-index: 1000; }
+#checkbox-yape:checked ~ .modal-qryape, #checkbox-comprar:checked ~ .modal-comocomprar { transform: scale(1); z-index: 1000; }
 
 .footer { background-color: #2C3E50; padding: .15rem 3rem; color: var(--white); font-size: 1.15rem; font-weight: 200; }
 
