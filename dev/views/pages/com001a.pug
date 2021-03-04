@@ -1,0 +1,40 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+    block menu-phone
+        include ../includes/header-menu-phone
+
+block menu-scroll
+    include ../includes/menu-scroll
+
+block main
+    .grupo-muebles
+        //- h2.grupo-muebles__title Camas
+        //- p.grupo-muebles__content Tenemos Camas de diferentes tamaños y modelos en madera y metal
+
+    .main__container-ventapagina
+        //- ============================================
+        - var ventaindex = false
+        - var dirIMG = 'comoda/'
+        - var codigo = 'com001'
+        - var title = 'Comoda de melamine con cajones y puertas'
+        - var precio = 'S/ 220'
+        - var color = false
+        - const com001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (com001a)
+
+
+
+block footer
+    include ../includes/footer
+
+
+
+
+
+
+
+
+
+        //- - const rop001 = {dirIMG: 'ropero/', codigo: 'rop001', title: 'Ropero con Cajones y espejo', precio: 'S/ 900'}

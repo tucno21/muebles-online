@@ -17,57 +17,88 @@ block main
         - var dirIMG = 'ropero/'
         - var codigo = 'rop001'
         - var title = 'Ropero con Cajones y espejo'
-        - var precio = 'S/ 1900'
+        - var precio = 'S/ 450'
         - var color = false
         - const rop001a = {ventaindex, dirIMG, codigo, title, precio, color}
         +product (rop001a)
         //- ============================================
         - var ventaindex = true
-        - var dirIMG = 'ropero/'
-        - var codigo = 'rop001'
-        - var title = 'Ropero grande de melamine'
-        - var precio = 'S/ 190'
+        - var dirIMG = 'repostero/'
+        - var codigo = 'rep001'
+        - var title = 'Repostero de melamine y con ventanas de vidrio'
+        - var precio = 'S/ 350'
         - var color = false
-        - const rop002a = {ventaindex, dirIMG, codigo, title, precio, color}
-        +product (rop002a)
+        - const rep001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (rep001a)
         //- ============================================
         - var ventaindex = true
-        - var dirIMG = 'ropero/'
-        - var codigo = 'rop001'
-        - var title = 'Ropero con dos puertas'
-        - var precio = 'S/ 900'
+        - var dirIMG = 'comoda/'
+        - var codigo = 'com001'
+        - var title = 'Comoda de melamine con cajones y puertas'
+        - var precio = 'S/ 220'
         - var color = false
-        - const rop003a = {ventaindex, dirIMG, codigo, title, precio, color}
-        +product (rop003a)
+        - const com001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (com001a)
         //- ============================================
         - var ventaindex = true
-        - var dirIMG = 'ropero/'
-        - var codigo = 'rop001'
-        - var title = 'Ropero con Cajones y espejo'
-        - var precio = 'S/ 1900'
+        - var dirIMG = 'estante/'
+        - var codigo = 'est001'
+        - var title = 'Estante de melamine para libros'
+        - var precio = 'S/ 90'
         - var color = false
-        - const rop004a = {ventaindex, dirIMG, codigo, title, precio, color}
-        +product (rop004a)
+        - const est001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (est001a)
         //- ============================================
         - var ventaindex = true
-        - var dirIMG = 'ropero/'
-        - var codigo = 'rop001'
-        - var title = 'Ropero con Cajones y espejo'
-        - var precio = 'S/ 1900'
+        - var dirIMG = 'mesa/'
+        - var codigo = 'mesa001'
+        - var title = 'Mesa de melamine con patas de tubo'
+        - var precio = 'S/ 120'
         - var color = false
-        - const rop005a = {ventaindex, dirIMG, codigo, title, precio, color}
-        +product (rop005a)
+        - const mesa001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (mesa001a)
         //- ============================================
         - var ventaindex = true
-        - var dirIMG = 'ropero/'
-        - var codigo = 'rop001'
-        - var title = 'Ropero con Cajones y espejo'
-        - var precio = 'S/ 1900'
+        - var dirIMG = 'silla/'
+        - var codigo = 'sill001'
+        - var title = 'Silla comedor de madera'
+        - var precio = 'S/ 75'
         - var color = false
-        - const rop006a = {ventaindex, dirIMG, codigo, title, precio, color}
-        +product (rop006a)
+        - const sill001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (sill001a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'cama/'
+        - var codigo = 'cam001'
+        - var title = 'cama de plaza y media de madera'
+        - var precio = 'S/ 280'
+        - var color = false
+        - const cam001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (cam001a)
+        //- ============================================
+        - var ventaindex = true
+        - var dirIMG = 'zapatero/'
+        - var codigo = 'zap001'
+        - var title = 'zapatero de melamine para diversos tamaños'
+        - var precio = 'S/ 140'
+        - var color = false
+        - const zap001a = {ventaindex, dirIMG, codigo, title, precio, color}
+        +product (zap001a)
 
-        //- include ../includes/main-index
+    //- FABRICA DE MUEBLES
+    .elaboracion
+        h2.elaboracion__title Fabricamos Muebles a Medida en Melamine
+        img.elaboracion__img(src="assets/img/fabrica2.jpg" alt="elaboramos muebles")
+        p.elaboracion__contenido Contáctenos para realizar una cotización y con gusto le atenderemos.
+        .fabrica__link.fabrica__telefono
+            a(href="tel:910954568") Llamenos
+                i.fas.fa-phone-volume
+        .fabrica__link.fabrica__whatsapp
+            a(href="https://wa.me/51910954568" target="_blank") Consultar al
+                i.fab.fa-whatsapp
+
+
+
 
 
 block footer

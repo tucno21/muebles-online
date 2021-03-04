@@ -73,6 +73,21 @@ img{
             font-size: $size-font-card-precio;
             // margin: 1rem 0;
         }
+
+        @include laptop{
+            &-title{
+                font-size: $size-font-card-title-laptop;
+            }
+    
+            &-codigo{
+                font-size: $size-font-card-subtitle-laptop;
+                margin: 1.5rem 0;
+            }
+    
+            &-precio{
+                font-size: $size-font-card-precio-laptop;
+            }
+        }
     }
 
     // BOTTOM

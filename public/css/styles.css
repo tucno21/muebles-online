@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 :root { --background-color:#F1F1F1; --Brown: #493323; --yellow: #FFDF91; --blue-bottom:#2980B9; --brown-bottom: #91684A; --white:#ECF0F1; --shade: 0px 4px 4px rgba(0, 0, 0, 0.25); --border-line: 1px solid rgba(0, 0, 0, 0.2); --linea: 1px solid red; --curve-little:.5rem; --curve-big:1rem; --curve-bottom:.5rem; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -115,7 +113,7 @@ template { display: none; }
 
 html { font-size: 62.5%; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
 
-body { background-color: var(--background-color); }
+body { background-color: #fff; }
 
 p, span, h1, h2, h3, h4, i { margin: 0; padding: 0; }
 
@@ -322,6 +320,10 @@ img { max-width: 100%; }
 
 .salecard__box-precio { font-size: 2rem; }
 
+@media screen and (min-width: 1024px) { .salecard__box-title { font-size: 1.5rem; }
+  .salecard__box-codigo { font-size: 1.3rem; margin: 1.5rem 0; }
+  .salecard__box-precio { font-size: 2.1rem; } }
+
 .salecard__box-bottom { display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; font-size: 1.2rem; text-align: center; padding: .8rem 0; min-width: 80%; width: 90%; height: 2rem; margin-top: 1rem; margin-bottom: .3rem; border-radius: var(--curve-bottom); box-shadow: var(--shade); }
 
 .salecard-ventas { height: 100%; flex-direction: column; }
@@ -401,6 +403,19 @@ img { max-width: 100%; }
 @media screen and (min-width: 1024px) { .modal .modal__container { transform: scale(1.2); } }
 
 #checkbox-yape:checked ~ .modal-qryape, #checkbox-comprar:checked ~ .modal-comocomprar { transform: scale(1); z-index: 1000; }
+
+.elaboracion { margin: 1rem; padding: 1.5rem; border: var(--border-line); box-shadow: var(--shade); text-align: center; background-color: #fff; }
+
+.elaboracion__title { font-size: 1.5rem; }
+
+.elaboracion__img { margin: 1rem 0; max-width: 90%; }
+
+.elaboracion__contenido { font-size: 1.3rem; margin: 1rem 0; }
+
+@media screen and (min-width: 1024px) { .elaboracion { width: 60%; position: relative; left: 50%; transform: translateX(-50%); }
+  .elaboracion__title { font-size: 2.1rem; }
+  .elaboracion__img { max-width: 70%; }
+  .elaboracion__contenido { font-size: 1.8rem; } }
 
 .footer { background-color: #2C3E50; padding: .15rem 3rem; color: var(--white); font-size: 1.15rem; font-weight: 200; }
 
