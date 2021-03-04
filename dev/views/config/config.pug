@@ -45,22 +45,22 @@ mixin product(AgregarDato)
                     label(for='checkbox-yape').salecard__box-bottom.bottom-yape
                         p Pagar con
                         img(src="assets/img/yape.png" alt="logo yape")
-                    .modal
-                        .modal__container.modal-qryape
-                            .modal_header
+                    .modal.modal-qryape
+                        .modal__container
+                            .modal__header
                                 p.modal__title Muebles Ayacucho
                                 label.modal__cerrar(for='checkbox-yape') X
                             .modal__content
-                                p.modal__sibtitle Escanee el código QR con su cuenta Yape
+                                p.modal__subtitle Escanee el código QR con su cuenta Yape
                                 img.modal__yape(src='assets/img/qryape.svg' alt='qr yape')
 
                     input#checkbox-comprar(type='checkbox')
                     label(for='checkbox-comprar').salecard__box-bottom.bottom-comocomprar
                         p ¿Cómo comprar?
                         i.fas.fa-shopping-cart
-                    .modal
-                        .modal__container.modal-comocomprar
-                            .modal_header
+                    .modal.modal-comocomprar
+                        .modal__container
+                            .modal__header
                                 p.modal__title Muebles Ayacucho
                                 label.modal__cerrar(for='checkbox-comprar') X
                             .modal__content
